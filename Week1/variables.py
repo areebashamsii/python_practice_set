@@ -66,6 +66,15 @@ print(_age,_name,_full_name)
 a = b = c = d=5
 print(a,b,c,d)
 
+#Conversion of Data Type:
+
+x=24
+x=str(x)
+print(type(x))
+y='24'
+y=int(y)
+print(type(y))
+
 #Scope of Variable:
 #Local Scope Variable
 
