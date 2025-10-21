@@ -1,5 +1,5 @@
-def info(**kwargs):
-    for k,v in kwargs.items():
-        print(f"{k}:{v}")
+stud_info=[("Ali",86),("zainab",84),("Areeba",98),("fatima",77)]
 
-print(info(pakistan="karachi",china="bejing",russia="Moscow",india="Delhi"))
+sort_by_score=sorted(stud_info, key=lambda x: x[1] ,reverse=True)
+print(sort_by_score)
+
