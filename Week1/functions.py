@@ -62,3 +62,4 @@ score=int(input("Enter your Score:"))
 def info(name='None',score=0):
     print(f"Hi {name} ! your score is {score}.")
 info(name,score)
+

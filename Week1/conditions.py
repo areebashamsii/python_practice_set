@@ -38,5 +38,6 @@ else:
 
 #Ternary Operator use
 #one line or single line Condition
+
 age=int(input("Enter your age to check if you are eligable or not:"))
 print("You are eligable!") if age>=20 and age<=30 else print("You are not eligiable!")

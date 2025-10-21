@@ -37,6 +37,18 @@ for num in numbers:
 
 print("Maximum Number is:",max_num)
 
+#print the table of 5:
+
+for i in range(0,50,5):
+    if i%5==0:
+        print(i)
+#print 5 by 5 Matrix using for loop
+ 
+for i in range(0,7):
+    for j in range(1,i):
+      print(j,end="")
+    print()
+
 #Program to print factorial using Loop:
 
 num=int(input("Enter a Number to find its factorial:"))
@@ -83,7 +95,8 @@ while i<=1000:
     
     i+=1
 print(i)   
-    
+
+
 
 
 
