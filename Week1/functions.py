@@ -63,3 +63,48 @@ def info(name='None',score=0):
     print(f"Hi {name} ! your score is {score}.")
 info(name,score)
 
+#  *args is used when you don't know the axact number of positional arguement:
+
+numbs=input("Enter as many number for its sum (seperate numbers with space):",)
+num_list=[int(x) for x in numbs.split()]  #numbs.split will split the above spaced number in each number and will create a list.
+
+def add(*num_list): # *variable_name will work as a parameter whose value is not defined until user stops.
+    total=0
+    for num in num_list:
+        total+=num
+    return total
+print(add(*num_list))
+
+# Enter no of students score to find the average using *args
+
+score=input("Enter Students score and seperate each score with a space:")
+all_score=[int(x) for x in score.split()]
+
+def avrg(*all_score):
+    total=0
+    for x in all_score:
+        total+=x
+    return total/len(all_score)
+print(avrg(*all_score))
+
+# (static) Kwargs
+def info(**kwargs):
+    for k,v in kwargs.items():
+        print(f"{k}:{v}")
+
+print(info(pakistan="karachi",china="bejing",russia="Moscow",india="Delhi"))
+
+# (Dynamic) **kwargs is used for no of keywords arguments , like it will create a dictionary when you don't know the no of items.
+
+name=input("Enter Your Name:")
+age=int(input("Enter Your age:"))
+country=input("Enter Your country Name:")
+
+def info(**kwargs):
+    for k,v in kwargs.items():
+        print(f"{k}:{v}")
+
+print(info(name=name,age=age,country=country))
+
+
+
