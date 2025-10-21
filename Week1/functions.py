@@ -106,5 +106,51 @@ def info(**kwargs):
 
 print(info(name=name,age=age,country=country))
 
+#lambda functions is python are the one liner function , which doesn't have a name and we directly store the value of function in a variale.
+#  we often use when we want simple functions , it's syntax is simple than
+# the ordinary function , can be used inside a loop or statement,it returns it values on its own
 
+
+#sum 3 number by using Lambda function 
+#Syntax:
+# variable_name=lambda parameters : statement 
+x=int(input("Enter first number:"))
+y=int(input("Enter second number:"))
+z=int(input("Enter third number:"))
+
+sum=lambda x,y,z: x+y+z
+print(sum(x,y,z))
+
+#sqaure:
+
+sum=lambda x: x*x
+print(sum(x))
+
+
+#Convert a list of celcius to farenhite temp using lambda function:
+#map() is the function used to perform same task for each element.syntax: map(func,iterable varible )
+#list() will store each iterable element of celcius list into a farenhite list after results
+celcius=[23,45,12,0,17]
+farenhite=list(map(lambda c:9/5*c+32,celcius)) #c is item in celcius
+print(farenhite)
+
+#print even numbers and odd numbers seperately from the list using lambda function:
+#filter() function only stores value after certain condition becomes true , it filters out data on a condition:
+
+list_num=[23,45,32,68,33,76,13,98,27]
+
+even_num=list(filter(lambda n:n % 2==0,list_num))
+print(even_num)
+odd_num=list(filter(lambda n:n % 2!=0,list_num))
+print(odd_num)
+
+#Sort student based on their score using lambda function and sort function:
+
+stud_info=[("Ali",86),("zainab",84),("Areeba",98),("fatima",77)]
+
+sort_by_score=sorted(stud_info, key=lambda x: x[1] ,reverse=True)
+print(sort_by_score)
+
+#Important point: we use list() func in 1st and 2nd program but not in 3rd because filter() and map() iterate in list one by one
+#where as sorted() immediately created a new sorted list.
 
