@@ -1,0 +1,14 @@
+{
+   "headphone": {
+      "Name": "Zero",
+      "price": 3000
+   },
+   "Mobile Cover": {
+      "Name": "Layer",
+      "price": 700
+   },
+   "Mouse": {
+      "Name": "Lenovo",
+      "Price": 4000
+   }
+}
