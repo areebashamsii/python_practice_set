@@ -252,3 +252,23 @@ def find_max(num_list)->int:
    
 print(find_max(num_list))
     
+## Decorators ##
+def greet_decorator(func):
+   def wrapper(*args, **kwargs):
+    
+    print("Guess the Number right to win!")
+
+    func(*args, **kwargs)
+    print("Thank you so much for playing!")
+   return wrapper
+
+
+# guess the number 
+z=int(input("Enter a number to guess:"))
+@greet_decorator #attach this fucntion with timer decorator function
+def guess_num(z):
+    if z==16:
+        print("Congratulations! you guessed the right Number")
+    else:
+        print("Sorry! you guessed the wrong number,Try again.")
+guess_num(z)
