@@ -1,5 +1,5 @@
 {
-   "headphone": {
+   "Headphone": {
       "Name": "Zero",
       "price": 3000
    },
@@ -7,8 +7,8 @@
       "Name": "Layer",
       "price": 700
    },
-   "Mouse": {
-      "Name": "Lenovo",
-      "Price": 4000
+   "headphone": {
+      "Name": "Zero",
+      "price": 3000
    }
 }
