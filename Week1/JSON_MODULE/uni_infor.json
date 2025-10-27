@@ -1,0 +1,31 @@
+{
+
+"stu_info":{
+
+
+    "areeba":"shamsi",
+    "ayesha":"malik",
+    "rabeea":"wasi",
+    "qirat":"wajahat"
+}
+,
+"staff_info":{
+    
+    "visiting_faculty":{
+
+        "tahreem":"raza",
+        "ahmed":"faraz",
+        "waleed":"akbar",
+        "shahista":"Nawaz"
+
+
+    },
+    "uni_faculty":{
+        "farhan": "ali",
+        "saad": "zain",
+        "umer": "omar",
+        "sadia": "sana"
+        
+}
+
+}}

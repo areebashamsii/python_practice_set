@@ -4,11 +4,12 @@
 ## Creating a python dictionary and convertig it into a JSON string. ##
 #import JSON module
 import json
+
 product_info={  # python dictionary
  
 "headphone":{"Name":"Zero","price":3000},
 "Cable":{"Name":"Ronin","price":500},
-"Mobile Cover":{"Name":"Layer","price":700},
+"Mobile Cover":{"Name":"Layer","price":700}
 }
 
 #coverting and storing it into a JSON file
@@ -38,5 +39,22 @@ with open("data.json","r") as product_info_json: # to read an existing jason fil
 product_info.pop("Cable",None) #dict_name.pop("key",None) is to delete a value from an existing dict
 
 #save the updated dict into json
-with open("data.json","w") as product_info_json:
+with open("c:/Users/USER/Documents/Python/Week1/JSON_MODULE/data.json","w") as product_info_json:
     json.dump(product_info,product_info_json,indent=3)
+print(product_info)
+
+## Converting 3 different i.e nested JSON str into separate python dict:
+
+
+#load file
+
+with open(r"C:\Users\USER\Documents\Python\Week1\JSON_MODULE\uni_infor.json", "r") as info:
+    uni_info=json.load(info)
+
+student_info=uni_info["stu_info"]
+visiting_faculty=uni_info["staff_info"]["visiting_faculty"]
+uni_faculty=uni_info["staff_info"]["uni_faculty"]
+
+print("Studnet Info:",student_info)
+print("visiting faculty:",visiting_faculty)
+print("University faculty",uni_faculty)
