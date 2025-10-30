@@ -12,9 +12,20 @@ This is a Command-line Student Management App which can perform CRUD Operations.
 
 # Project Structure
 
-Student_management_system/
-    . main.py 
-    . file_ops
-    . stu_ops.py
-    . data.json
-    . README.md          
+Student_management_system:  (Main Directory)
+
+    . main.py     # CLI for user
+    . file_ops    # only read and write JSON file
+    . stu_ops.py  # Perform CRUD operations
+    . data.json   # Students records or Data 
+    . README.md   # Explaination of this project   
+
+# Topics that I covered in this project
+
+. Variables
+. Conditions
+. Loops
+. Functions
+. JSON Module
+. File handling
+. Error handling
