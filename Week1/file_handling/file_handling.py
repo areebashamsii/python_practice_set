@@ -45,7 +45,7 @@ with open(r'C:\Users\USER\Documents\Python\Week1\file_handling\bird.jpg','rb') a
   myimage=i.read()
 print(type(myimage)) #it will give output of the type of image which is binary i.e (<class 'bytes'>)
 print(myimage) #it will provide the rgb values of each pixel.
-
+print(myimage[:50])# will only print first 100 bytes)
 ## 'wb' MODE or write binary mode ##
 
 #  use for copying a binary image file into a new binary file , it will ead an existing binary file of an image and copy it and create a new file
