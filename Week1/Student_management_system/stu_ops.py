@@ -18,8 +18,8 @@ def add_stu():
             add_stu()
             return
 
-    name = input("Enter your Name::")
-    age = input("Enter your Age::")
+    name = input("Enter your Name:")
+    age = input("Enter your Age:")
     department = input("Enter your Department:")
 
     stu_info = {
