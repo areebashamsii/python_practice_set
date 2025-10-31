@@ -1,7 +1,7 @@
 import json
 import os
 
-filename=r"C:\Users\USER\Documents\Python\Week1\Student_management_system\data.json"
+filename=r"C:\Users\USER\Documents\Python\Week1\Student_management_system\records.json"
 def read_data(filename):
     if os.path.exists(filename):
         try:
@@ -16,3 +16,4 @@ def read_data(filename):
 def store_data(filename,records):
         with open(filename,'w') as f:
             json.dump(records,f,indent=4)
+
