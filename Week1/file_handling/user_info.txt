@@ -1,1 +1,0 @@
-{'Name': 'Summiya Shamsi', 'Age': 17, 'Country': 'Pakistan'}{'Name': 'Summiya Shamsi', 'Age': 17, 'Country': 'Pakistan'}{'Name': 'Summiya Shamsi', 'Age': 17, 'Country': 'Pakistan'}

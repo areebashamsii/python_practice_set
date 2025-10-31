@@ -1,26 +1,14 @@
 [
     {
-        "Id": 8,
+        "Id": "0008",
         "Name": "Areeba Shamsi",
         "Age": "22",
-        "Department": "Software Engineering"
+        "Department": "Software Engr"
     },
     {
-        "Id": 9,
-        "Name": "Warda Shamsi",
-        "Age": "19",
-        "Department": "Software Enginnering"
-    },
-    {
-        "Id": 10,
-        "Name": "Zain",
-        "Age": "22",
-        "Department": "Artificial Intelligence"
-    },
-    {
-        "Id": 1002,
-        "Name": "Fatima Zehra",
-        "Age": "21",
-        "Department": "Arts"
+        "Id": "0016",
+        "Name": "Fatima Khalid",
+        "Age": "23",
+        "Department": "AI"
     }
 ]
