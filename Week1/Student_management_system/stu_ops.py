@@ -1,8 +1,10 @@
 from file_ops import read_data, store_data
-
+import os
+import json
 filename=r"C:\Users\USER\Documents\Python\Week1\Student_management_system\records.json"
 
 def add_stu():
+    print("Add Student in record.")
     records = read_data(filename)
     while True:
         id = input("Enter your Id:")
@@ -38,6 +40,7 @@ def add_stu():
     print("Student added successfully!")
 
 def update_stu():
+    print("Update Student record.")
     records = read_data(filename)
     update_id=input("Enter Student Id to update your record:")
     
@@ -63,6 +66,7 @@ def update_stu():
         update_stu()
 
 def delete_stu():
+    print("Delete Student from record.")
     records = read_data(filename)
     del_id=input("Enter Student Id to delete the record:")
     
@@ -86,10 +90,23 @@ def delete_stu():
     else:
      print("This Id does not Exist!")
 
+def check_records():
+   records=read_data(filename)
+   if records==[]:
+       print("No record has been stored!")
+       print("Add student")
+       add_stu()
+   else:
+        
+        print("-----STUDENTS RECORDS-----")
+        for student in records:
+           print(f"ID:{student["Id"]}")
+           print(f"Name:{student["Name"]}")
+           print(f"Age:{student["Age"]}")
+           print(f"Department:{student["Department"]}")
+           print("\n")
+        
 
 
 
-#add_stu()
-#update_stu()
-#delete_stu()
 
