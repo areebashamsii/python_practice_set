@@ -45,7 +45,7 @@ print(cars)
 print(post_info)
 print(stu_ids)
 
-#Variable Type Checking
+#Data Type Checking
 
 print(type(age))
 print(type(name))

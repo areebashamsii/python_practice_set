@@ -9,3 +9,13 @@ I’m using this repo to improve my Python skills step by step
 - File Handling
 - JSON_Module
 - Error Handling
+
+## Topics of Week 2
+- Classes and objects
+- Constructors and methods
+- Encapsulation
+- Inheritence
+- Polymorphism
+- Modules and packages
+- Virtual enivornment and pip
+- PEP8_Coding Standard
