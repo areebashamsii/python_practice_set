@@ -77,7 +77,7 @@ device_name(laptop()) # we pass the class in this parameter which calls the code
 device_name(computer())
 device_name(Mobile()) 
 
-#  Opertaor overriding ( special method)
+# Magic Method or Opertaor overriding ( special method)
 class  Number:
    def __init__(self,value):
       self.value=value
